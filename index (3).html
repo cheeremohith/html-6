@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillNest Online Courses</title>
+<style>
+/* Basic reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background-color: #f3f6fb; color: #333; }
+
+/* Header */
+.header { background-color: #14213d; color: white; padding: 15px; text-align: center; }
+.header a { color: white; text-decoration: none; margin: 0 10px; }
+.header a:hover { color: #f59e0b; }
+
+/* Banner */
+.banner { background-color: #2563eb; color: white; text-align: center; padding: 70px 20px; }
+.banner h1 { font-size: 38px; margin-bottom: 15px; }
+.button { background-color: #f59e0b; color: black; padding: 10px 25px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; text-decoration: none; display: inline-block; }
+
+/* Sections */
+.section { padding: 40px 20px; text-align: center; }
+.section h2 { color: #14213d; margin-bottom: 20px; }
+.white { background-color: white; }
+
+/* Cards */
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.card { background-color: white; width: 230px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px gray; }
+.white .card { background-color: #f3f6fb; }
+.icon { font-size: 40px; }
+.price { color: #2563eb; font-weight: bold; margin: 8px 0; }
+
+/* Enrollment form */
+.form-box { background-color: white; max-width: 400px; margin: auto; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px gray; }
+.form-box input, .form-box select { width: 100%; padding: 10px; margin-bottom: 12px; }
+
+.footer { background-color: #14213d; color: white; text-align: center; padding: 15px; }
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .banner h1 { font-size: 26px; }
+  .card { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>SkillNest</h2>
+  <a href="#categories">Categories</a>
+  <a href="#courses">Courses</a>
+  <a href="#instructors">Instructors</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#enroll">Enroll</a>
+</div>
+
+<div class="banner">
+  <h1>Learn New Skills Online</h1>
+  <p>Simple lessons, real projects and certificates.</p>
+  <a class="button" href="#enroll">Enroll Now</a>
+</div>
+
+<div class="section" id="categories">
+  <h2>Course Categories</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">💻</div><h3>Web Development</h3></div>
+    <div class="card"><div class="icon">📊</div><h3>Data Science</h3></div>
+    <div class="card"><div class="icon">🎨</div><h3>Design</h3></div>
+    <div class="card"><div class="icon">📈</div><h3>Marketing</h3></div>
+  </div>
+</div>
+
+<div class="section white" id="courses">
+  <h2>Popular Courses</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🌐</div><h3>HTML and CSS</h3><p>6 weeks | Beginner</p><p class="price">Rs. 499</p><button class="button">View Course</button></div>
+    <div class="card"><div class="icon">🐍</div><h3>Python Basics</h3><p>8 weeks | Beginner</p><p class="price">Rs. 799</p><button class="button">View Course</button></div>
+    <div class="card"><div class="icon">🎨</div><h3>UI/UX Design</h3><p>5 weeks | Beginner</p><p class="price">Rs. 599</p><button class="button">View Course</button></div>
+  </div>
+</div>
+
+<div class="section" id="instructors">
+  <h2>Our Instructors</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">👨‍💻</div><h3>Ravi Kumar</h3><p>Web Developer</p></div>
+    <div class="card"><div class="icon">👩‍💻</div><h3>Sita Devi</h3><p>Data Analyst</p></div>
+    <div class="card"><div class="icon">🧑‍🎨</div><h3>Arjun Rao</h3><p>Designer</p></div>
+  </div>
+</div>
+
+<div class="section white" id="reviews">
+  <h2>Student Reviews</h2>
+  <div class="cards">
+    <div class="card"><p>"I built my first website in two weeks!"</p><p><b>- Priya</b></p></div>
+    <div class="card"><p>"Clear lessons and helpful teachers."</p><p><b>- Harsha</b></p></div>
+  </div>
+</div>
+
+<div class="section" id="enroll">
+  <h2>Enroll Now</h2>
+  <div class="form-box">
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <select>
+        <option>HTML and CSS</option>
+        <option>Python Basics</option>
+        <option>UI/UX Design</option>
+      </select>
+      <button class="button" type="submit">Enroll</button>
+    </form>
+  </div>
+</div>
+
+<div class="footer"><p>&copy; 2026 SkillNest Online Learning</p></div>
+
+</body>
+</html>
